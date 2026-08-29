@@ -1,5 +1,3 @@
-# Operational-Flight-Plan-OFP-Generator-with-Alternate-Diversion-Logic
-
 # 📋 Commercial Airline Operational Flight Plan (OFP) Generator
 
 An end-to-end Flight Operations Engineering dispatch software platform designed to generate ICAO Annex 6 compliant Operational Flight Plans (OFP), calculate waypoint navigation logs with aerodynamic wind triangle corrections, and validate destination alternate aerodrome dispatch legality.
@@ -56,3 +54,40 @@ operational-flight-plan-generator/
 ├── README.md
 └── tests/
     └── test_ofp.py            # Automated pytest unit test vectors
+
+🚀 4. Quickstart & Local Setup
+Bash
+# Clone the repository
+git clone [https://github.com/scalstein/operational-flight-plan-generator.git](https://github.com/scalstein/operational-flight-plan-generator.git)
+cd operational-flight-plan-generator
+
+# Create and activate virtual environment
+python3 -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run automated test suite
+pytest tests/
+
+# Launch the Streamlit application
+streamlit run app.py
+
+📊 5. Dashboard Capabilities
+Full Dispatch Release View: Standard airline OFP printout including block fuel, burn rates, and payload numbers.
+
+Interactive GeoJSON Route Trajectory: Geospatial rendering of primary airway corridors and diversion vector legs.
+
+Fuel Composition Pie & Structural Margins: Visual breakdown of ICAO reserve categories alongside MTOW/MLW/MZFW limits.
+
+Alternate Aerodrome Legal Verification: Automated comparison of aircraft landing distance requirements against physical runway lengths and PCN.
+
+👨‍💻 Engineering Author
+Pascal Ambogo Mudimba
+
+Flight Operations Engineering & Aviation Data Systems
+
+GitHub: @scalstein
+
+Streamlit Hub: share.streamlit.io/user/scalstein
